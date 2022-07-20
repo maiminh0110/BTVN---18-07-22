@@ -1,0 +1,8 @@
+luong = 50000000
+giamtru1 = 11000000 #giảm trừ bản thân 
+giamtru2 = 4400000 #giảm trừ gia cảnh trên 1 người
+nguoigiamtru = 2  #số người tình giảm trừ
+
+thunhaptinhthue = luong - giamtru1 - nguoigiamtru*giamtru2
+
+print("Thu nhập tính thuế của 1 người là: ", thunhaptinhthue,"đồng")
