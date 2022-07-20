@@ -1,0 +1,60 @@
+x1 = 200
+y1 = 300
+z1 = 4
+
+x2 = 100
+y2 = 50
+z2 = 5
+ 
+x3 = 35
+y3 = 40
+z3 = 3
+
+Vx1 = x2 - x1 # tọa độ x vector nối 2 điểm 1-2 
+Vy1 = y2 - y1 # tọa độ y vector nối 2 điểm 1-2
+
+x4 = Vx1 + x3
+y4 = Vy1 + y3
+
+print ("tọa độ điểm thứ 4 của hình bình hành là ","(",x4,";",y4,")")
+
+import turtle 
+t = turtle.Turtle()
+
+t.color("green")
+t.penup()
+t.setpos(x1, y1)
+t.pendown()
+
+t.setpos(x3, y3)
+t.fillcolor("green")
+t.begin_fill()
+t.circle(3)
+t.end_fill()
+
+t.setpos(x2, y2)
+t.fillcolor("green")
+t.begin_fill()
+t.circle(3)
+t.end_fill()
+
+t.setpos(x3, y3)
+t.setpos(x4, y4)
+t.setpos(x2, y2)
+t.setpos(x1, y1)
+t.fillcolor("green")
+t.begin_fill()
+t.circle(3)
+t.end_fill()
+
+
+t.color("blue")
+t.setpos(x1, y1)
+t.setpos(x4, y4)
+
+t.fillcolor("blue")
+t.begin_fill()
+t.circle(3)
+t.end_fill()
+
+turtle.done()
